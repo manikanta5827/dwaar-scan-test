@@ -1,0 +1,4 @@
+name,email,phone,ssn,credit_card,dob,address
+Ravi Kumar,ravi.kumar@example.com,+1-415-555-0132,123-45-6789,4111111111111111,1990-04-12,"221B Baker Street, London"
+Priya Sharma,priya.sharma@example.com,+91-98765-43210,987-65-4321,5500005555555559,1985-11-03,"12 MG Road, Bengaluru 560001"
+John Smith,john.smith@example.com,(212) 555-0187,078-05-1120,378282246310005,1978-02-28,"350 Fifth Avenue, New York, NY 10118"

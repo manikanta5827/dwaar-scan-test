@@ -1,0 +1,23 @@
+name: Vulnerable PR Processing
+
+on:
+  pull_request_target:
+    types: [opened, edited]
+
+permissions: write-all
+
+jobs:
+  check-title:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+
+      - name: Log PR Title
+        run: |
+          echo "Processing PR: ${{ github.event.pull_request.title }}"
+
+      - name: Build PR code
+        run: npm install && npm test
